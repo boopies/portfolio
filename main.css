@@ -29,11 +29,10 @@ ul {
 }
 
 ul li a{
-    font-size: 20px;
+    font-size: 25px;
     text-decoration: none;
     letter-spacing: 3px;
     color: white;
-    font-size: bold;
 }
 
 ul li a:hover{
@@ -60,35 +59,28 @@ body{
     width: 100%;
 }
 
-#head{
-    background-color: Yellow;
-}
-
-header{
-    width: 100%;
-
-}
 section{
     width: 100%;
-    height: 100vh;
+    height: 1090px;
+    overflow: hidden;
 }
 
 #splash{
-    background: url("/images/pastel.png") no-repeat;
+    background: url('images/pastel.png') no-repeat;
     display: flex;
     justify-content: center;
     align-items: stretch;
-    height: 100vh;
+    height: 1090px;
 }
 
-#splash .black{
+.black{
     width:  50%;
     background-color: black;
 }
 
 .black .always{
     text-align: center;
-    background: url("/images/pastel.png") no-repeat;
+    background: url('images/pastel.png') no-repeat;
     background-size: cover;
     background-clip:text;
     -webkit-background-clip: text;
@@ -96,19 +88,21 @@ section{
     text-align: right;
     margin-top: 0px;
     vertical-align: middle;
+    line-height: 550px;
 }
 
 .always h1{
     margin: auto;
     font-family: 'Montserrat Alternates', sans-serif;
     font-weight: bolder;
-    font-size: 19vw;
+    overflow-wrap: break-word;
+    font-size: 350px;
 }
 
-#splash .white{
+.white{
     display: flex;
     background: 
-    linear-gradient(to bottom, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("/images/pastel.png") no-repeat;
+    linear-gradient(to bottom, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('images/pastel.png') no-repeat;
     background-size: cover;
     flex-direction: column;
     width: 50%;
@@ -120,7 +114,7 @@ section{
     margin-left: 20px;
     font-family: 'Montserrat Alternates', sans-serif;
     justify-items: space;
-    font-size: 8vw;
+    font-size: 200px;
 }
 
 
@@ -131,12 +125,14 @@ section{
 }
 
 .pro-picture{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 50%;
 }
 
 .pro-picture img{
     height: 100%;
-    width: 100%;
 }
 
 .pro-bio{
@@ -147,17 +143,16 @@ section{
 }
 
 .greet{
-    font-size: 15vh;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 200px;
     font-weight: bolder;
     }
 
 .pro-bio h1{
         text-align: center;
-        font-size: 7vh; 
-        font-weight: bold;
-        font-weight: bolder;
+        font-size: 80px;
         font-family: 'Montserrat Alternates', sans-serif;
-        background: url("/images/pastel.png") no-repeat;
+        background: url('images/pastel.png') no-repeat;
         background-size: cover;
         background-clip:text;
         -webkit-background-clip: text;
@@ -166,11 +161,12 @@ section{
 
 .pro-bio p{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 2em;
+    font-size: 30px;
     padding: 20px;
     color: white;
-    text-indent: 1em;
-    line-height: 2em;
+    text-indent: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
 }
 
 .FSD{color:#FBF5BB;} .Devlang{color:#E399D9;} .per1{color:#CC97F9;} .per2{color:#9A9EF9;} .per3{color:#A4DeFe;}
@@ -211,61 +207,62 @@ section{
     font-family: 'Montserrat Alternates', sans-serif;
     font-weight: bolder;
     width: 50%;
-    background-color: rgb(7, 25, 58);
+    background-color: rgb(4, 15, 36);
     color: white;
-    font-size: 25vh;
     text-align: right;
-    line-height: 200%;
+    overflow: hidden;
+}
+
+.goto-page{
+    font-size: 75px;;
 }
 
 .portfolio-title h1{
-    background: url("/images/pastel.png") no-repeat;
+    font-size: 350px;
+    margin: 0px;
+    background: url('images/pastel.png') no-repeat;
     background-size: cover;
     background-clip:text;
     -webkit-background-clip: text;
     color: transparent;
-    word-break: break-all;
-    margin-right: 30px;
+    overflow-wrap: break-word;
 }
 
 #My-Portfolio .projects{
-    height: 100vh;
-    padding: 15px 15px 15px 15px;
-    display: grid;
-    grid-template-columns: minmax(0, 50vw) minmax(0, 50vw);
-    grid-template-rows: repeat(3, minmax(0, 33.3vh));
-    grid-gap: 15px;
-    overflow: auto;
+    display: flex;
+    flex-direction: column;
     width: 50%;
-    background-color: rgb(181, 206, 252);
+    background-color: rgb(141, 180, 252);
 }
 
 .project{
-    font-size: 5em;
+    font-size: 50px;
     color: white;
     vertical-align: middle;
     text-align: center;
     line-height: 350px;
+    margin: 5px
 }
 
-.box1{
-    background-image:url("images/hp-quiz-title.png");
-    background-size: 100% 100%;
-    -webkit-transition: .2s all;}
 
-.learnmore1{
-    font-size: 1em;
-    opacity: 0;
-    cursor: pointer;
+.first-row, .second-row, .third-row{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 33.3%;
+}
+.box1, .box2, .box3, .box4, .box5, .box6 { 
+    border: 10px solid rgb(141, 180, 252);
+    align-items: center; 
+    justify-content: center;
+    height: 100%;
+    width: 50%;
 }
 
-.learnmore1:hover{
-    opacity: 1;
-    background-color: rgba(0,0,0, 0.9);
-    display: block;
-    font-size: 1em;
-    cursor: pointer;
-    }
+.box1 img{
+    width: 100%;
+    height: 100%;
+}
 
 .box2{background-color:blue;}
 .box3{background-color:black;}
@@ -273,39 +270,39 @@ section{
 .box5{background-color:pink;}
 .box6{background-color:navy}
 
-#Contact-ME{
+ #About-ME{
     display: flex;
     flex-direction: row;
-    background-color: lightcoral;
+    background-color:rgb(65, 16, 16);
 }
 
-#Contact-ME .contact-deets{
+ #About-ME .contact-deets{
     width: 50%;
 }
 
-#Contact-ME .contact-title{
+ #About-ME .contact-title{
     width: 50%;
     font-family: 'Montserrat Alternates', sans-serif;
     font-weight: bolder;
-    background-color: rgb(44, 5, 5);
+    background-color: rgb(12, 4, 4);
     color: white;
-    font-size: 22vh;
+    font-size: 150px;
     text-align: left;
-    line-height: 150%;
+    padding-top: -50px;
 }
 
 .contact-title h1{
-    background: url("/images/pastel.png") no-repeat;
+    background: url('images/pastel.png') no-repeat;
     background-size: cover;
     background-clip:text;
     -webkit-background-clip: text;
     color: transparent;
-    word-break: break-all;
+    overflow-wrap: break-word;
     margin-left: 50px;
 }
 
 .about-pic{
-    margin-top: 7vh;
+    margin-top: 60px;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -318,18 +315,18 @@ section{
 
 .about-me{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.2em;
+    font-size: 20px;
     padding: 20px;
     color: white;
-    text-indent: 2em;
-    line-height: 2em;
-    background-color: lightcoral;
+    text-indent: 40px;
+    line-height: 40px;
+    background-color: rgb(65, 16, 16)
 }
 
 .aboutcontact{
     display: flex;
     justify-content: center;
-    background-color: lightcoral;
+    background-color: rgb(65, 16, 16)
 }
 
 .git, .slack, .linkedin, .gmail{
@@ -339,25 +336,10 @@ section{
 .aboutcontact img{
     height: 100px;
     width: 100px;
-
-}
-
-#scroll{
-    font-size: 10px;
-    position:fixed;
-    z-index: 9;
-    bottom: 0px;
-    left: 50%;
-    text-align: center;
-    color: rgba(255, 255, 255, 0.5);
-}
-
-#scroll-icon{
-    opacity: 0.25;
-    height:10px;
 }
 
 .footer{
+    font-size: 11px;
    display: flex;
     bottom: 0px;
     left: 0px;
@@ -366,10 +348,11 @@ section{
     z-index: 1;
 }
 
+.footer a{
+    color: white;
+}
 
-/* ipad size */
-
-
+/* ipad pro size */
 @media screen and (max-width: 1024px){
     body{
         overflow-x: hidden;
@@ -381,6 +364,7 @@ section{
 
     section{
         width: 100%;
+        overflow: hidden;
     }
 
     .nav-links{
@@ -420,299 +404,416 @@ section{
     .toggle .line3{
         transform: rotate(45deg) translate(-5px,-6px);
     }
-
+    
     #splash{
         display: flex;
         flex-direction: column;
-        height: 100vh;
+        height: 1366px;
     }
     
-    #splash .black{
+    .black{
         width:  100%;
-        height: 60%;
+        height: 50%;
+        background-color: black;
     }
-    .always h1{
-        margin-top: 55px;
-        font-size: 23vh;
+    
+    .black .always{
+        margin-top: 0px;
         text-align: center;
+        vertical-align: middle;
+        line-height: 350px;
     }
-
-    #splash .white{
-        height: 40%;
-        width: 100%;
-        justify-content: space-around;
-        color: white;
+    
+    .always h1{
+        font-size: 310px;
+    }
+    
+    .white{
+        width:  100%;
+        height: 50%;
     }
     
     .white p{
-        margin: 0px;
-        padding: 20px;
         text-align: center;
-        font-size: 8vh;
+        font-size: 150px;
     }
 
-   #Professional-Bio{
+    #Professional-Bio{
         flex-direction: column;
-        height: 1200px;
-        background-color: black;
-        width: 100vw;
-        align-items: center;
-        justify-content: flex-start;
-        padding:0px;
-        margin: 0px;
+        height:1366px;
     }
-
+    
     .pro-picture{
-        display: flex;
-        height: 45vh;
-        justify-content: center;
-        align-items: center;
+        height: 50%;
+        align-self: center;
     }
-
+    
     .pro-picture img{
+        height: 75%;
         border-radius: 50%;
-        align-content: center;
-        width: 420px;
-        height: 420px;
     }
-
+    
     .pro-bio{
-        height: 50vh;  
-        background-color: black;
+        height: 50%;
         width: 100%;
     }
-
+    
+    .greet{
+        font-family: 'Montserrat Alternates', sans-serif;
+        font-size: 100px;
+        font-weight: bolder;
+        }
+    
     .pro-bio h1{
-    font-size: 5vh;
-    }
-
-    .pro-bio .greet{
-    font-size: 10vh;
-    }
-
+            text-align: center;
+            font-size: 50px;
+            }
+    
     .pro-bio p{
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 1.7em;
-        padding-top: 20px;
-        padding-left: 20px;
-        padding-right: 20px;
-        padding-bottom: 20px;
-        color: white;
-        text-indent: 2em;
+        font-size: 25px;
+        margin-bottom: 0px;
+    }
+  
+    .mail-me{
+        width: 50%;
     }
 
     #My-Portfolio{
-        display: flex;
         flex-direction: column;
+        height:1366px;
     }
-
-
+    
     #My-Portfolio .portfolio-title{
-        width: 100%;
-        background-color: rgb(7, 25, 58);
-        color: white;
-        font-size: 11vh;
         text-align: center;
+        height: 30%;
+        width: 100%;
     }
-
-
+    
+    .goto-page{
+        font-size: 50px;;
+    }
+    
+    .portfolio-title h1{
+        font-size: 230px;
+    }
+    
     #My-Portfolio .projects{
+        height: 70%;
         width: 100%;
     }
     
     .project{
-        font-size: 2em;
-        color: white;
-        vertical-align: middle;
-        text-align: center;
-        line-height: 250px;
+        line-height: 300px;
+
     }
-    
-    #Contact-ME{
+
+     #About-ME{
+        height: 1366px;
         flex-direction: column;
     }
-    #Contact-ME :nth-child(1) { order: 2; }
-    #Contact-ME :nth-child(2) { order: 1; }
     
-    #Contact-ME .contact-deets{
+     #About-ME :nth-child(1) { order: 2; }
+     #About-ME :nth-child(2) { order: 1; }
+    
+
+     #About-ME .contact-deets{
         width: 100%;
-        height: 700px;
     }
     
-    #Contact-ME .contact-title{
-        height: 40vh;
+     #About-ME .contact-title{
         width: 100%;
-        font-size: 12vh;
+        height: 30%;
+        font-size: 96px;
         text-align: center;
+    }
+    
+    .contact-title h1{
+        margin: 0px;
     }
     
     .about-pic{
-        margin-top: 20px;
+        margin-top: 60px;
     }
-    
     .about-pic img{
         height: 300px;
         width: 300px;
         border-radius: 50%;
     }
-    
-    .about-me{
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 1.3em;
-        padding: 20px;
-        color: white;
-        text-indent: 2em;
-        line-height: 1.5em;
-    }
-    
-    .aboutcontact img{
-        height: 100px;
-        width: 100px;
-    }
-
 
 }
 
-/*for lower screen */
-
 @media screen and (max-width: 768px){
-    #splash .black{
-    height: 50%;
-    }
-    #splash .white{
-        height: 50%;
-    }
-
-
+    
     .always h1{
-        margin-top: 35px;
-        font-size: 20vh;
-        text-align: center;
+        font-size: 250px;
     }
 
-   #Professional-Bio{
+    #Professional-Bio{
         flex-direction: column;
-        height: 1024px;
-        width: 100vw;
-        align-items: center;
-        justify-content: flex-start;
-        padding:0px;
-        margin: 0px;
+        height:1366px;
     }
-
+    
     .pro-picture{
-        margin-top: 20px;
-        display: flex;
-        height: 300px;
-        width: 300px;
-        justify-content: center;
-        align-items: center;
+        height: 40%;
     }
-
+    
     .pro-picture img{
-        width: 300px;
-        height: 300px;
+        height: 75%;
+    }
+    
+    .pro-bio{
+        height: 60%;
     }
 
+    .goto-page{
+        font-size: 50px;;
+    }
+    
+    .portfolio-title h1{
+        font-size: 170px;
+    }
+    
+}
+
+
+@media screen and (max-width: 414px){
+
+    #splash{
+        display: flex;
+        flex-direction: column;
+        height: 1000px;
+    }
+    
+    .black{
+        height: 40%;
+    }
+    
+    .black .always{
+        margin-top: 20px;
+        line-height: 150px;
+    }
+    
+    .always h1{
+        font-size: 150px;
+    }
+    
+    .white{
+        height: 60%;
+    }
+    
+    .white p{
+        font-size: 80px;
+    }
+
+
+    #Professional-Bio{
+        flex-direction: column;
+        height:1366px;
+    }
+    
+    .pro-picture{
+        height: 30%;
+        align-self: center;
+    }
+    
+    .pro-picture img{
+        height: 75%;
+        border-radius: 50%;
+    }
+    
     .pro-bio{
-        height: 50vh;  
+        height: 70%;
         width: 100%;
+    }
+    
+    .greet{
+        font-size: 90px;
     }
 
     .pro-bio h1{
-    font-size: 5vh;
+            text-align: center;
+            font-size: 40px;
+            }
+
+            .pro-bio p{
+                font-size: 23px;
+                }
+    
+    .about-me{
+        margin-bottom: 30px;
     }
-
-    .pro-bio .greet{
-    font-size: 10vh;
-    }
-
-    .pro-bio p{
-        font-size: 1.5em;
-    }
-
-    #Contact-ME .contact-title{
-        font-size: 10vh;
-    }
-
-}
-
-@media screen and (max-width: 500px){
-    .always h1{
-        font-size: 17vh;
-    }
-
-   #Professional-Bio{
-        height: 1000px;
-    }
-
-    .pro-picture img{
-        width: 200px;
-        height: 200px;
-    }
-
-    .pro-bio p{
-        font-size: 1em;
-    }
-
+  
     .mail-me{
-    font-size: 30px;
-}
-
-#My-Portfolio{
-    display: flex;
-    flex-direction: column;
-}
-
-#My-Portfolio .portfolio-title{
-    width: 100%;
-    background-color: rgb(7, 25, 58);
-    color: white;
-    font-size: 8vh;
-    text-align: center;
-}
+        font-size: 25px;
+        width: 75%;
+    }
 
 
-#My-Portfolio .projects{
-    width: 100%;
-}
+    #My-Portfolio .portfolio-title{
+        height: 15%;
+    }
 
-.project{
-    font-size: 1em;
-    color: white;
-    vertical-align: middle;
-    text-align: center;
-}
-
-#Contact-ME .contact-title{
-    font-size: 9vh;
-}
-
-
-#My-Portfolio .projects{
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr;
-    justify-content: center;
-
-}
-
-.git, .slack, .linkedin, .gmail{
-    margin: 10px;
-}
-
-
-
-}
-
-@media screen and (max-width: 400px){
-    .aboutcontact{
-        display: grid;
-        grid-template-rows: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
+    .goto-page{
+        font-size: 25px;;
+    }
+    
+    .first-row, .second-row, .third-row{
+        flex-direction: column;
+        width: 100%;
+        align-items: center; 
         justify-content: center;
+    }
+
+    .portfolio-title h1{
+        font-size: 90px;
+    }
+    
+    #My-Portfolio .projects{
+        height: 85%;
+    }
+    
+    .project{
+        line-height: 300px;
+    }
+
+    .box1, .box2, .box3, .box4, .box5, .box6 { 
+        margin:0px;
+        border: 5px solid rgb(141, 180, 252);
+        height: 50%;
+        width: 75%;
+        line-height: 200px;;
+    }
+
+
+     #About-ME{
+        height: 1366px;
+        flex-direction: column;
+    }
+    
+     #About-ME .contact-deets{
+        width: 100%;
+    }
+    
+     #About-ME .contact-title{
+        font-size: 50px;
+    }
+    
+    .contact-title h1{
+        margin: 0px;
+    }
+    
+    .about-pic{
+        margin-top: 10px;
+    }
+    .about-pic img{
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+    }
+
+    .aboutcontact img{
+        margin-top: -50px;
+        height: 50px;
+        width: 50px;
+    }
 }
 
+@media screen and (max-width: 375px){
 
+    #splash{
+        height: 900px;
+    }
+    
+    .black{
+        height: 30%;
+    }
+    
+    .black .always{
+        margin-top: 20px;
+        line-height: 100px;
+    }
+    
+    .always h1{
+        font-size: 100px;
+    }
+    
+    .white{
+        height: 70%;
+    }
+    
+    .white p{
+        font-size: 60px;
+    }
 
+    #Professional-Bio{
+        height:1500px;
+    }
+
+     #About-ME{
+        height: 1500px;
+    }
+}
+
+@media screen and (max-width: 320px){
+
+    #splash{
+        height: 800px;
+    }
+    
+    .black{
+        height: 30%;
+    }
+    
+    .black .always{
+        margin-top: 20px;
+        line-height: 100px;
+    }
+    
+    .pro-picture{
+        height: 20%;
+        align-self: center;
+    }
+    
+    .pro-picture img{
+        height: 70%;
+        border-radius: 50%;
+    }
+    .pro-bio{
+        height: 80%;
+    }
+
+    .always h1{
+        font-size: 100px;
+    }
+    
+    .white{
+        height: 70%;
+    }
+    
+    .white p{
+        font-size: 60px;
+    }
+
+    #Professional-Bio{
+        height:1500px;
+    }
+
+     #About-ME{
+        height: 1600px;
+    }
+
+    .goto-page{
+        font-size: 25px;;
+    }
+    
+    .first-row, .second-row, .third-row{
+        flex-direction: column;
+        width: 100%;
+        align-items: center; 
+        justify-content: center;
+    }
+
+    .portfolio-title h1{
+        font-size: 70px;
+    }
 }

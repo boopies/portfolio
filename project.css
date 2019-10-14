@@ -15,7 +15,8 @@ header{
     font-family: 'Montserrat Alternates', sans-serif;
     font-weight: bolder;
     padding: 20px;
-    font-size: 5vmin;
+    font-size: 5vmax;
+    font-size: 30px;
     text-align: center;
     height: 200px;
     color: white;

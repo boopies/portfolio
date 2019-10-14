@@ -8,6 +8,7 @@
         <meta name="author" content="Mulia Teguh Nguyen">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates:400,500,600,800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="normalize.css" type="text/css">
         <link rel="stylesheet" href="main.css" type="text/css">
     </head>
     <body>
@@ -16,7 +17,7 @@
                 <li><a href="#splash">Home</a></li>
                 <li><a href="#Professional-Bio">Mulia Teguh Nguyen</a></li>
                 <li><a href="#My-Portfolio">Portfolio</a></li>
-                <li><a href="#Contact-ME">Contact Me</a></li>
+                <li><a href="#About-ME">About Me</a></li>
             </ul>
             <div class="burger">
                 <div class="line1"></div>
@@ -28,7 +29,7 @@
         <main>
             <section id="splash">
                 <div class="black">
-                    <div class="always"><h1>ALW<br/>AYS.</h1></div>
+                    <div class="always"><h1>ALWAYS.</h1></div>
                 </div>
                 <div class="white">
                     <div class="create"><p>creating</p></div>
@@ -50,23 +51,30 @@
                 am looking forward to learning more!</p>
                         <p>I am <span class="per1">curious</span>, <span class="per2">easy to approach</span>, 
                             and as a teacher, <span class="per3">patient</span>. I am looking forward to the challenges developing brings.</p>
-                            <div type="button" class="mail-me">contact me</div>
+                            <button type="button" class="mail-me">contact me</button>
                 </div>
             </section>
             <section id="My-Portfolio">
                 <div class="portfolio-title">
                     <h1>Portfolio</h1>
+                    <p class="goto-page">Click on an image to find out more.</p>
                 </div>
                 <div class="projects">
-                    <div class="project box1"><div class="learnmore1">Learn more</div></div>
-                    <div class="project box2">Come</div>
-                    <div class="project box3">Back For</div>
-                    <div class="project box4">More</div>
-                    <div class="project box5">Projects</div>
-                    <div class="project box6">Later</div>
+                    <div class="first-row">
+                        <div class="project box1"><a href="project1.html"><img src="images/hp-quiz-title.png" alt="harry potter quiz"></a></div>
+                        <div class="project box2">reserved</div>
+                    </div>
+                    <div class="second-row">
+                        <div class="project box3">reserved</div>
+                        <div class="project box4">reserved</div>
+                    </div>
+                    <div class="third-row">
+                        <div class="project box5">reserved</div>
+                        <div class="project box6">reserved</div>
+                    </div>
                 </div>
             </section>
-            <section id="Contact-ME">
+            <section id="About-ME">
                 <div class="contact-deets">
                     <div class="about-pic">
                         <img src="images/profileabout.jpg" alt="Happy Mulia Nguyen">
@@ -81,8 +89,8 @@
                             them to chase their dreams to be happy, then I have to follow that advice too.
                         </p>
                         <p>
-                            As everyone says, it's never too late to do what you love. and after 10 years 
-                            of moving up the teaching chain, here I am. Back to being a student and I am having 
+                            As everyone says, it's never too late to do what you love. And after 10 years 
+                            of moving up the teaching chain, here I am. Back to being a student and having 
                             a blast learning. I am soaking all the information I can, while trying not 
                             to bang my head against the wall too much. 
                         </p>
@@ -93,18 +101,14 @@
                         <div class="gmail"><a href="mailto:mulia.teguh.nguyen@gmail.com"><img src="images/email.svg" alt="email"></a></div>
                     </div>
                 </div>
-                <div class="contact-title"><h1>Contact <br />Me</h1>
+                <div class="contact-title"><h1>About Me</h1>
                 </div>
             </section>
-            <div id="scroll">
-                <p><img id="scroll-icon" src="/icons/scroll.svg" alt="scroll arrows"></p>
-            </div>
         </main>
         <footer>
             <div class="footer">Created by Mulia Teguh Nguyen, 2019. Contact: <address><a href="mailto:mulia.teguh.nguyen@gmail.com">mulia.teguh.nguyen@gmail.com</a></address></div>
         </footer>
-        <script type="text/javascript" src="/index.js"></script>
+        <script type="text/javascript" src="index.js"></script>
         <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-        <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
     </body>
 </html>

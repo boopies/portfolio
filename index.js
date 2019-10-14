@@ -21,15 +21,6 @@ function mailMe(){
     });
 }
 
-function gotoProject(){
-
-    const project = document.querySelector('.learnmore1')
-
-    project.addEventListener('click', function() {
-    location.href = "project1.html";
-    });
-}
 
 mailMe();
 navEnter();
-gotoProject();
