@@ -1,0 +1,710 @@
+/* Full Website */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    width: 100%;
+    position: fixed;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+ul {
+    list-style: none;
+    width: fit-content;
+    margin: auto;
+}
+
+
+.nav-links li{
+    display: flex;
+    justify-content: space-around;
+    float: left;
+    margin-left: 30px;
+}
+
+ul li a{
+    font-size: 20px;
+    text-decoration: none;
+    letter-spacing: 3px;
+    color: white;
+    font-size: bold;
+}
+
+ul li a:hover{
+    text-decoration: underline;
+}
+
+.burger{
+    display: none;
+}
+
+
+.burger div{
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+    transition: all .3s ease;
+}
+
+
+body{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 10vh;
+}
+
+#head{
+    background-color: Yellow;
+}
+
+header{
+    width: 100%;
+
+}
+section{
+    width: 100%;
+    height: 100vh;
+}
+
+#splash{
+    background: url("/images/pastel.png") no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    height: 100vh;
+}
+
+#splash .black{
+    width:  50%;
+    background-color: black;
+}
+
+.black .always{
+    text-align: center;
+    background: url("/images/pastel.png") no-repeat;
+    background-size: cover;
+    background-clip:text;
+    -webkit-background-clip: text;
+    color: transparent;
+    text-align: right;
+    margin-top: 0px;
+    vertical-align: middle;
+}
+
+.always h1{
+    margin: auto;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: bolder;
+    font-size: 19vw;
+}
+
+#splash .white{
+    display: flex;
+    background: 
+    linear-gradient(to bottom, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("/images/pastel.png") no-repeat;
+    background-size: cover;
+    flex-direction: column;
+    width: 50%;
+    justify-content: space-around;
+    color: white;
+}
+
+.white p{
+    margin-left: 20px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    justify-items: space;
+    font-size: 8vw;
+}
+
+
+#Professional-Bio{
+    background-color: lightblue;
+    display: flex;
+    flex-direction: row;
+}
+
+.pro-picture{
+    width: 50%;
+}
+
+.pro-picture img{
+    height: 100%;
+    width: 100%;
+}
+
+.pro-bio{
+    width: 50%;
+    background-color: rgb(1, 24, 27);
+    display: flex;
+    flex-direction: column;
+}
+
+.greet{
+    font-size: 15vh;
+    font-weight: bolder;
+    }
+
+.pro-bio h1{
+        text-align: center;
+        font-size: 7vh; 
+        font-weight: bold;
+        font-weight: bolder;
+        font-family: 'Montserrat Alternates', sans-serif;
+        background: url("/images/pastel.png") no-repeat;
+        background-size: cover;
+        background-clip:text;
+        -webkit-background-clip: text;
+        color: transparent;
+        }
+
+.pro-bio p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    padding: 20px;
+    color: white;
+    text-indent: 1em;
+    line-height: 2em;
+}
+
+.FSD{color:#FBF5BB;} .Devlang{color:#E399D9;} .per1{color:#CC97F9;} .per2{color:#9A9EF9;} .per3{color:#A4DeFe;}
+
+.mail-me{
+    align-self: center;
+    background-color: #CAF0FE;
+    width: 75%;
+    height: 80px;
+    color: black;
+    vertical-align: middle;
+    font-size: 3em;
+    font-weight: bolder;
+    line-height: 80px;
+    border-radius: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.mail-me a{
+    text-decoration: none;
+    color: black;
+
+}
+
+.mail-me:hover{
+    background-color: #E5D8FE;
+}
+
+#My-Portfolio{
+    display: flex;
+    flex-direction: row;
+}
+
+#My-Portfolio .portfolio-title{
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: bolder;
+    width: 50%;
+    background-color: rgb(7, 25, 58);
+    color: white;
+    font-size: 25vh;
+    text-align: right;
+    line-height: 200%;
+}
+
+.portfolio-title h1{
+    background: url("/images/pastel.png") no-repeat;
+    background-size: cover;
+    background-clip:text;
+    -webkit-background-clip: text;
+    color: transparent;
+    word-break: break-all;
+    margin-right: 30px;
+}
+
+#My-Portfolio .projects{
+    height: 100vh;
+    padding: 15px 15px 15px 15px;
+    display: grid;
+    grid-template-columns: minmax(0, 50vw) minmax(0, 50vw);
+    grid-template-rows: repeat(3, minmax(0, 33.3vh));
+    grid-gap: 15px;
+    overflow: auto;
+    width: 50%;
+    background-color: rgb(181, 206, 252);
+}
+
+.project{
+    font-size: 5em;
+    color: white;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 350px;
+}
+
+.box1{
+    background-image:url("images/hp-quiz-title.png");
+    background-size: 100% 100%;
+    -webkit-transition: .2s all;}
+
+.learnmore1{
+    font-size: 1em;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.learnmore1:hover{
+    opacity: 1;
+    background-color: rgba(0,0,0, 0.9);
+    display: block;
+    font-size: 1em;
+    cursor: pointer;
+    }
+
+.box2{background-color:blue;}
+.box3{background-color:black;}
+.box4{background-color:purple;}
+.box5{background-color:pink;}
+.box6{background-color:navy}
+
+#Contact-ME{
+    display: flex;
+    flex-direction: row;
+    background-color: lightcoral;
+}
+
+#Contact-ME .contact-deets{
+    width: 50%;
+}
+
+#Contact-ME .contact-title{
+    width: 50%;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: bolder;
+    background-color: rgb(44, 5, 5);
+    color: white;
+    font-size: 22vh;
+    text-align: left;
+    line-height: 150%;
+}
+
+.contact-title h1{
+    background: url("/images/pastel.png") no-repeat;
+    background-size: cover;
+    background-clip:text;
+    -webkit-background-clip: text;
+    color: transparent;
+    word-break: break-all;
+    margin-left: 50px;
+}
+
+.about-pic{
+    margin-top: 7vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-pic img{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+}
+
+.about-me{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    padding: 20px;
+    color: white;
+    text-indent: 2em;
+    line-height: 2em;
+    background-color: lightcoral;
+}
+
+.aboutcontact{
+    display: flex;
+    justify-content: center;
+    background-color: lightcoral;
+}
+
+.git, .slack, .linkedin, .gmail{
+    margin: 20px;
+}
+
+.aboutcontact img{
+    height: 100px;
+    width: 100px;
+
+}
+
+#scroll{
+    font-size: 10px;
+    position:fixed;
+    z-index: 9;
+    bottom: 0px;
+    left: 50%;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+#scroll-icon{
+    opacity: 0.25;
+    height:10px;
+}
+
+
+
+/* ipad size */
+
+
+@media screen and (max-width: 1024px){
+    body{
+        overflow-x: hidden;
+    }
+
+    header{
+        width: 100%;
+    }
+
+    section{
+        width: 100%;
+    }
+
+    .nav-links{
+    position: absolute;
+    right: 0px;
+    height: 50vh;
+    top: 0vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 5px;
+    background-color: rgba(0, 0, 0, .9);
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+    }
+
+    .burger{
+    display: block;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    }
+
+    .nav-active{
+        transform: translateX(0%);
+    }
+
+    .toggle .line1{
+        transform: rotate(-45deg) translate(-5px,6px);
+    }
+    
+    .toggle .line2{
+        opacity: 0;
+    }
+    
+    .toggle .line3{
+        transform: rotate(45deg) translate(-5px,-6px);
+    }
+
+    #splash{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
+    
+    #splash .black{
+        width:  100%;
+        height: 60%;
+    }
+    .always h1{
+        margin-top: 55px;
+        font-size: 23vh;
+        text-align: center;
+    }
+
+    #splash .white{
+        height: 40%;
+        width: 100%;
+        justify-content: space-around;
+        color: white;
+    }
+    
+    .white p{
+        margin: 0px;
+        padding: 20px;
+        text-align: center;
+        font-size: 8vh;
+    }
+
+   #Professional-Bio{
+        flex-direction: column;
+        height: 1200px;
+        background-color: black;
+        width: 100vw;
+        align-items: center;
+        justify-content: flex-start;
+        padding:0px;
+        margin: 0px;
+    }
+
+    .pro-picture{
+        display: flex;
+        height: 45vh;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .pro-picture img{
+        border-radius: 50%;
+        align-content: center;
+        width: 420px;
+        height: 420px;
+    }
+
+    .pro-bio{
+        height: 50vh;  
+        background-color: black;
+        width: 100%;
+    }
+
+    .pro-bio h1{
+    font-size: 5vh;
+    }
+
+    .pro-bio .greet{
+    font-size: 10vh;
+    }
+
+    .pro-bio p{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.7em;
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+        color: white;
+        text-indent: 2em;
+    }
+
+    #My-Portfolio{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    #My-Portfolio .portfolio-title{
+        width: 100%;
+        background-color: rgb(7, 25, 58);
+        color: white;
+        font-size: 11vh;
+        text-align: center;
+    }
+
+
+    #My-Portfolio .projects{
+        width: 100%;
+    }
+    
+    .project{
+        font-size: 2em;
+        color: white;
+        vertical-align: middle;
+        text-align: center;
+        line-height: 250px;
+    }
+    
+    #Contact-ME{
+        flex-direction: column;
+    }
+    #Contact-ME :nth-child(1) { order: 2; }
+    #Contact-ME :nth-child(2) { order: 1; }
+    
+    #Contact-ME .contact-deets{
+        width: 100%;
+        height: 700px;
+    }
+    
+    #Contact-ME .contact-title{
+        height: 40vh;
+        width: 100%;
+        font-size: 12vh;
+        text-align: center;
+    }
+    
+    .about-pic{
+        margin-top: 20px;
+    }
+    
+    .about-pic img{
+        height: 300px;
+        width: 300px;
+        border-radius: 50%;
+    }
+    
+    .about-me{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.3em;
+        padding: 20px;
+        color: white;
+        text-indent: 2em;
+        line-height: 1.5em;
+    }
+    
+    .aboutcontact img{
+        height: 100px;
+        width: 100px;
+    }
+
+
+}
+
+/*for lower screen */
+
+@media screen and (max-width: 768px){
+    #splash .black{
+    height: 50%;
+    }
+    #splash .white{
+        height: 50%;
+    }
+
+
+    .always h1{
+        margin-top: 35px;
+        font-size: 20vh;
+        text-align: center;
+    }
+
+   #Professional-Bio{
+        flex-direction: column;
+        height: 1024px;
+        width: 100vw;
+        align-items: center;
+        justify-content: flex-start;
+        padding:0px;
+        margin: 0px;
+    }
+
+    .pro-picture{
+        margin-top: 20px;
+        display: flex;
+        height: 300px;
+        width: 300px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .pro-picture img{
+        width: 300px;
+        height: 300px;
+    }
+
+    .pro-bio{
+        height: 50vh;  
+        width: 100%;
+    }
+
+    .pro-bio h1{
+    font-size: 5vh;
+    }
+
+    .pro-bio .greet{
+    font-size: 10vh;
+    }
+
+    .pro-bio p{
+        font-size: 1.5em;
+    }
+
+    #Contact-ME .contact-title{
+        font-size: 10vh;
+    }
+
+}
+
+@media screen and (max-width: 500px){
+    .always h1{
+        font-size: 17vh;
+    }
+
+   #Professional-Bio{
+        height: 1000px;
+    }
+
+    .pro-picture img{
+        width: 200px;
+        height: 200px;
+    }
+
+    .pro-bio p{
+        font-size: 1em;
+    }
+
+    .mail-me{
+    font-size: 30px;
+}
+
+#My-Portfolio{
+    display: flex;
+    flex-direction: column;
+}
+
+#My-Portfolio .portfolio-title{
+    width: 100%;
+    background-color: rgb(7, 25, 58);
+    color: white;
+    font-size: 8vh;
+    text-align: center;
+}
+
+
+#My-Portfolio .projects{
+    width: 100%;
+}
+
+.project{
+    font-size: 1em;
+    color: white;
+    vertical-align: middle;
+    text-align: center;
+}
+
+#Contact-ME .contact-title{
+    font-size: 9vh;
+}
+
+
+#My-Portfolio .projects{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    justify-content: center;
+
+}
+
+.git, .slack, .linkedin, .gmail{
+    margin: 10px;
+}
+
+
+
+}
+
+@media screen and (max-width: 400px){
+    .aboutcontact{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+}
+
+
+
+}
