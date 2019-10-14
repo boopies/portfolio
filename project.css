@@ -1,0 +1,161 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    height: 100vh;
+}
+
+header{
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: bolder;
+    padding: 20px;
+    font-size: 5vmin;
+    text-align: center;
+    height: 200px;
+    color: white;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)),url(/images/pastel.png);
+    background-size: cover;
+}
+
+nav {
+    width: 100%;
+    position: fixed;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+ul {
+    list-style: none;
+    width: fit-content;
+    margin: auto;
+}
+
+.return li{
+    display: flex;
+    justify-content: space-around;
+    float: left;
+    margin-left: 30px;
+}
+
+ul li a{
+    font-size: 20px;
+    text-decoration: none;
+    letter-spacing: 3px;
+    color: white;
+    font-size: bold;
+}
+
+ul li a:hover{
+    text-decoration: underline;
+}
+
+main{
+    display: flex;
+    overflow: hidden;
+}
+
+.screenshot{
+    display: flex;
+    width: 50%;
+    vertical-align: middle;
+    background-color: black;
+    height: 82vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.screenshot img{
+    width: 45vw;
+}
+
+.script-lang{
+    display: flex;
+    margin: 10px;
+}
+
+.icon img{
+    height: 50px;
+    width:  50px;
+    padding: 5px;
+}
+
+.pro-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 82vh;
+}
+
+
+.description{
+    font-size: 1.5em;
+    padding: 20px;
+}
+
+.page-buttons{
+    display: flex;
+}
+
+button{
+    font-size: 1.5em;
+    height: 75px;
+    width: 200px;
+    margin: 20px;
+    font-weight: bold;
+    background-color: lightblue;
+}
+
+button:hover{
+    background-color: darkgoldenrod;
+}
+
+@media screen and (max-width: 1024px){
+    main{
+        flex-direction: column;
+    }
+
+    .screenshot{
+        height: 40vh;
+        width: 100%;
+    }
+
+    .screenshot img{
+        width: 70vw;
+    }
+
+    .pro-info{
+        width: 100%;
+        height: 35vh;
+    }
+    
+}
+
+@media screen and (max-width: 768px){
+
+    .screenshot{
+        height: 40vh;
+        width: 100%;
+    }
+
+    .screenshot img{
+        width: 70vw;
+    }
+
+    .pro-info{
+        width: 100%;
+        height: 600px;
+    }
+
+    .page-buttons{
+        flex-direction: column;
+    }
+
+}

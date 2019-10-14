@@ -55,9 +55,9 @@ ul li a:hover{
 
 
 body{
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 10vh;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 
 #head{
@@ -357,6 +357,14 @@ section{
     height:10px;
 }
 
+.footer{
+   display: flex;
+    bottom: 0px;
+    left: 0px;
+    color: white;
+    background-color: black;
+    z-index: 1;
+}
 
 
 /* ipad size */
