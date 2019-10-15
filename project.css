@@ -18,7 +18,7 @@ header{
     font-size: calc(2vh + 2vw);
     text-align: center;
     color: white;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)),url(/images/pastel.png);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)),url('images/pastel.png');
     background-size: cover;
 }
 
