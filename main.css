@@ -263,11 +263,19 @@ section{
     border: 10px solid rgb(141, 180, 252);
     align-items: center; 
     justify-content: center;
-    height: 100%;
     width: 50%;
 }
 
+.box1{
+    background-image: url('images/hp-quiz-title.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: block;
+}
 .box1 img{
+    opacity: 0;
+    border-radius: 50%;
     height: 100%;
 }
 
