@@ -270,6 +270,7 @@ section{
 .box1 img{
     height: 100%;
 }
+
 .box2{background-color:blue;}
 .box3{background-color:black;}
 .box4{background-color:purple;}
@@ -460,6 +461,10 @@ section{
     
     #My-Portfolio .projects{
         height: 70%;
+        width: 100%;
+    }
+
+    .box1 img{
         width: 100%;
     }
 
