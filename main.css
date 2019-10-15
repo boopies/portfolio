@@ -281,6 +281,7 @@ section{
     display: flex;
     flex-direction: row;
     background-color:rgb(65, 16, 16);
+    height: 1200px;
 }
 
  #About-ME .contact-deets{
