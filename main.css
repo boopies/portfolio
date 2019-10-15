@@ -29,7 +29,7 @@ ul {
 }
 
 ul li a{
-    font-size: 25px;
+    font-size-adjust: inherit;
     text-decoration: none;
     letter-spacing: 3px;
     color: white;
@@ -61,8 +61,9 @@ body{
 
 section{
     width: 100%;
-    height: 1090px;
+    height: 100vh;
     overflow: hidden;
+    font-size: 16px;
 }
 
 #splash{
@@ -70,12 +71,15 @@ section{
     display: flex;
     justify-content: center;
     align-items: stretch;
-    height: 1090px;
 }
 
 .black{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width:  50%;
     background-color: black;
+    padding: auto;
 }
 
 .black .always{
@@ -85,18 +89,17 @@ section{
     background-clip:text;
     -webkit-background-clip: text;
     color: transparent;
-    text-align: right;
+    text-align: center;
     margin-top: 0px;
     vertical-align: middle;
-    line-height: 550px;
 }
 
 .always h1{
-    margin: auto;
     font-family: 'Montserrat Alternates', sans-serif;
     font-weight: bolder;
     overflow-wrap: break-word;
-    font-size: 350px;
+    word-break: break-all;
+    font-size: calc(11vw + 11vh);
 }
 
 .white{
@@ -111,10 +114,12 @@ section{
 }
 
 .white p{
+    flex-grow: 1;
+    flex-shrink: 1;
     margin-left: 20px;
     font-family: 'Montserrat Alternates', sans-serif;
     justify-items: space;
-    font-size: 200px;
+    font-size: calc(7vw + 7vh);
 }
 
 
@@ -144,13 +149,13 @@ section{
 
 .greet{
     font-family: 'Montserrat Alternates', sans-serif;
-    font-size: 200px;
+    font-size: calc(4vh + 4vw);
     font-weight: bolder;
     }
 
 .pro-bio h1{
         text-align: center;
-        font-size: 80px;
+        font-size: calc(2.5vh + 2.5vw);
         font-family: 'Montserrat Alternates', sans-serif;
         background: url('images/pastel.png') no-repeat;
         background-size: cover;
@@ -161,12 +166,11 @@ section{
 
 .pro-bio p{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 30px;
+    font-size: calc(1vh + 1vw);
     padding: 20px;
     color: white;
     text-indent: 40px;
-    line-height: 40px;
-    margin-bottom: 30px;
+    line-height: calc(2vh + 2vw);
 }
 
 .FSD{color:#FBF5BB;} .Devlang{color:#E399D9;} .per1{color:#CC97F9;} .per2{color:#9A9EF9;} .per3{color:#A4DeFe;}
@@ -178,7 +182,7 @@ section{
     height: 80px;
     color: black;
     vertical-align: middle;
-    font-size: 3em;
+    font-size: calc(2vh + 2vw);
     font-weight: bolder;
     line-height: 80px;
     border-radius: 20px;
@@ -204,6 +208,10 @@ section{
 }
 
 #My-Portfolio .portfolio-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     font-family: 'Montserrat Alternates', sans-serif;
     font-weight: bolder;
     width: 50%;
@@ -214,11 +222,11 @@ section{
 }
 
 .goto-page{
-    font-size: 75px;;
+    font-size: calc(1.5vh + 1.5vw);
 }
 
 .portfolio-title h1{
-    font-size: 350px;
+    font-size: calc(7.5vh + 7.5vw);
     margin: 0px;
     background: url('images/pastel.png') no-repeat;
     background-size: cover;
@@ -226,6 +234,7 @@ section{
     -webkit-background-clip: text;
     color: transparent;
     overflow-wrap: break-word;
+    word-break: break-all;
 }
 
 #My-Portfolio .projects{
@@ -236,11 +245,10 @@ section{
 }
 
 .project{
-    font-size: 50px;
+    font-size: calc(2vh + 2vw);
     color: white;
     vertical-align: middle;
     text-align: center;
-    line-height: 350px;
     margin: 5px
 }
 
@@ -263,7 +271,6 @@ section{
     width: 100%;
     height: 100%;
 }
-
 .box2{background-color:blue;}
 .box3{background-color:black;}
 .box4{background-color:purple;}
@@ -281,14 +288,17 @@ section{
 }
 
  #About-ME .contact-title{
+    display:flex;
+    justify-content: center;
+    align-items: center;
     width: 50%;
     font-family: 'Montserrat Alternates', sans-serif;
     font-weight: bolder;
     background-color: rgb(12, 4, 4);
     color: white;
-    font-size: 150px;
-    text-align: left;
-    padding-top: -50px;
+    font-size: calc(6vw + 6vh);
+    text-align: center;
+
 }
 
 .contact-title h1{
@@ -298,7 +308,7 @@ section{
     -webkit-background-clip: text;
     color: transparent;
     overflow-wrap: break-word;
-    margin-left: 50px;
+    word-break: break-all;
 }
 
 .about-pic{
@@ -315,7 +325,7 @@ section{
 
 .about-me{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
+    font-size: calc(1vw + 1vh);
     padding: 20px;
     color: white;
     text-indent: 40px;
@@ -354,9 +364,6 @@ section{
 
 /* ipad pro size */
 @media screen and (max-width: 1024px){
-    body{
-        overflow-x: hidden;
-    }
 
     header{
         width: 100%;
@@ -404,416 +411,143 @@ section{
     .toggle .line3{
         transform: rotate(45deg) translate(-5px,-6px);
     }
-    
+
     #splash{
-        display: flex;
         flex-direction: column;
-        height: 1366px;
     }
-    
-    .black{
-        width:  100%;
+
+    .black, .white {
+        width: 100%;
         height: 50%;
-        background-color: black;
+        text-align: center;
     }
-    
+
     .black .always{
-        margin-top: 0px;
         text-align: center;
-        vertical-align: middle;
-        line-height: 350px;
-    }
-    
-    .always h1{
-        font-size: 310px;
-    }
-    
-    .white{
-        width:  100%;
-        height: 50%;
-    }
-    
-    .white p{
-        text-align: center;
-        font-size: 150px;
     }
 
     #Professional-Bio{
         flex-direction: column;
-        height:1366px;
+        height:1200px;
     }
-    
+
+    .pro-picture, .pro-bio{
+        width: 100%;
+    }
+
     .pro-picture{
-        height: 50%;
-        align-self: center;
+        height: 40%;
     }
-    
+
     .pro-picture img{
         height: 75%;
         border-radius: 50%;
     }
-    
+
     .pro-bio{
-        height: 50%;
-        width: 100%;
-    }
-    
-    .greet{
-        font-family: 'Montserrat Alternates', sans-serif;
-        font-size: 100px;
-        font-weight: bolder;
-        }
-    
-    .pro-bio h1{
-            text-align: center;
-            font-size: 50px;
-            }
-    
-    .pro-bio p{
-        font-size: 25px;
-        margin-bottom: 0px;
-    }
-  
-    .mail-me{
-        width: 50%;
+        height: 60%;
     }
 
     #My-Portfolio{
         flex-direction: column;
-        height:1366px;
     }
     
     #My-Portfolio .portfolio-title{
-        text-align: center;
-        height: 30%;
         width: 100%;
+        height: 30%;
+        text-align: center;
     }
     
-    .goto-page{
-        font-size: 50px;;
-    }
-    
-    .portfolio-title h1{
-        font-size: 230px;
-    }
     
     #My-Portfolio .projects{
         height: 70%;
         width: 100%;
     }
-    
-    .project{
-        line-height: 300px;
 
-    }
-
-     #About-ME{
-        height: 1366px;
+    #About-ME{
         flex-direction: column;
+        height: 1300px
     }
     
      #About-ME :nth-child(1) { order: 2; }
      #About-ME :nth-child(2) { order: 1; }
     
+     #About-ME .contact-deets {
+     width: 100%;
+     height: 60%;
+ }
+ #About-ME .contact-title{
+    width: 100%;
+    height: 40%;
+}
 
-     #About-ME .contact-deets{
-        width: 100%;
-    }
-    
-     #About-ME .contact-title{
-        width: 100%;
-        height: 30%;
-        font-size: 96px;
-        text-align: center;
-    }
-    
-    .contact-title h1{
-        margin: 0px;
-    }
-    
-    .about-pic{
-        margin-top: 60px;
-    }
-    .about-pic img{
-        height: 300px;
-        width: 300px;
-        border-radius: 50%;
-    }
+.about-pic img{
+    margin-top: 10px;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+.git, .slack, .linkedin, .gmail{
+    margin: 10px;
+}
+
+.aboutcontact img{
+    height: 50px;
+    width: 50px;
+}
 
 }
 
+/* ipad pro size */
 @media screen and (max-width: 768px){
-    
-    .always h1{
-        font-size: 250px;
-    }
 
     #Professional-Bio{
         flex-direction: column;
-        height:1366px;
+        height:100vh;
     }
-    
+
+    .pro-picture, .pro-bio{
+        width: 100%;
+    }
+
     .pro-picture{
         height: 40%;
     }
-    
+
     .pro-picture img{
-        height: 75%;
-    }
-    
-    .pro-bio{
-        height: 60%;
-    }
-
-    .goto-page{
-        font-size: 50px;;
-    }
-    
-    .portfolio-title h1{
-        font-size: 170px;
-    }
-    
-}
-
-
-@media screen and (max-width: 414px){
-
-    #splash{
-        display: flex;
-        flex-direction: column;
-        height: 1000px;
-    }
-    
-    .black{
-        height: 40%;
-    }
-    
-    .black .always{
-        margin-top: 20px;
-        line-height: 150px;
-    }
-    
-    .always h1{
-        font-size: 150px;
-    }
-    
-    .white{
-        height: 60%;
-    }
-    
-    .white p{
-        font-size: 80px;
-    }
-
-
-    #Professional-Bio{
-        flex-direction: column;
-        height:1366px;
-    }
-    
-    .pro-picture{
-        height: 30%;
-        align-self: center;
-    }
-    
-    .pro-picture img{
-        height: 75%;
-        border-radius: 50%;
-    }
-    
-    .pro-bio{
-        height: 70%;
-        width: 100%;
-    }
-    
-    .greet{
-        font-size: 90px;
-    }
-
-    .pro-bio h1{
-            text-align: center;
-            font-size: 40px;
-            }
-
-            .pro-bio p{
-                font-size: 23px;
-                }
-    
-    .about-me{
-        margin-bottom: 30px;
-    }
-  
-    .mail-me{
-        font-size: 25px;
-        width: 75%;
-    }
-
-
-    #My-Portfolio .portfolio-title{
-        height: 15%;
-    }
-
-    .goto-page{
-        font-size: 25px;;
-    }
-    
-    .first-row, .second-row, .third-row{
-        flex-direction: column;
-        width: 100%;
-        align-items: center; 
-        justify-content: center;
-    }
-
-    .portfolio-title h1{
-        font-size: 90px;
-    }
-    
-    #My-Portfolio .projects{
-        height: 85%;
-    }
-    
-    .project{
-        line-height: 300px;
-    }
-
-    .box1, .box2, .box3, .box4, .box5, .box6 { 
-        margin:0px;
-        border: 5px solid rgb(141, 180, 252);
-        height: 50%;
-        width: 75%;
-        line-height: 200px;;
-    }
-
-
-     #About-ME{
-        height: 1366px;
-        flex-direction: column;
-    }
-    
-     #About-ME .contact-deets{
-        width: 100%;
-    }
-    
-     #About-ME .contact-title{
-        font-size: 50px;
-    }
-    
-    .contact-title h1{
-        margin: 0px;
-    }
-    
-    .about-pic{
-        margin-top: 10px;
-    }
-    .about-pic img{
-        height: 200px;
-        width: 200px;
-        border-radius: 50%;
-    }
-
-    .aboutcontact img{
-        margin-top: -50px;
-        height: 50px;
-        width: 50px;
-    }
-}
-
-@media screen and (max-width: 375px){
-
-    #splash{
-        height: 900px;
-    }
-    
-    .black{
-        height: 30%;
-    }
-    
-    .black .always{
-        margin-top: 20px;
-        line-height: 100px;
-    }
-    
-    .always h1{
-        font-size: 100px;
-    }
-    
-    .white{
-        height: 70%;
-    }
-    
-    .white p{
-        font-size: 60px;
-    }
-
-    #Professional-Bio{
-        height:1500px;
-    }
-
-     #About-ME{
-        height: 1500px;
-    }
-}
-
-@media screen and (max-width: 320px){
-
-    #splash{
-        height: 800px;
-    }
-    
-    .black{
-        height: 30%;
-    }
-    
-    .black .always{
-        margin-top: 20px;
-        line-height: 100px;
-    }
-    
-    .pro-picture{
-        height: 20%;
-        align-self: center;
-    }
-    
-    .pro-picture img{
-        height: 70%;
-        border-radius: 50%;
-    }
-    .pro-bio{
         height: 80%;
+        border-radius: 50%;
     }
 
-    .always h1{
-        font-size: 100px;
+    #About-ME{
+        flex-direction: column;
+        height: 1300px
     }
-    
-    .white{
+
+     #About-ME .contact-deets {
         height: 70%;
     }
-    
-    .white p{
-        font-size: 60px;
+
+    #About-ME .contact-title{
+        height: 30%;
     }
 
-    #Professional-Bio{
-        height:1500px;
-    }
+.about-pic img{
+    margin-top: 10px;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
 
-     #About-ME{
-        height: 1600px;
-    }
+.git, .slack, .linkedin, .gmail{
+    margin: 10px;
+}
 
-    .goto-page{
-        font-size: 25px;;
-    }
-    
-    .first-row, .second-row, .third-row{
-        flex-direction: column;
-        width: 100%;
-        align-items: center; 
-        justify-content: center;
-    }
+.aboutcontact img{
+    height: 50px;
+    width: 50px;
+}
 
-    .portfolio-title h1{
-        font-size: 70px;
-    }
+
 }
