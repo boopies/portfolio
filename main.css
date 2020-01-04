@@ -25,14 +25,15 @@ ul {
     display: flex;
     justify-content: space-around;
     float: left;
-    margin-left: 30px;
+    margin-left: 40px;
 }
 
 ul li a{
-    font-size-adjust: inherit;
+    font-size: 30px;
     text-decoration: none;
     letter-spacing: 3px;
     color: white;
+    font-size: bold;
 }
 
 ul li a:hover{
@@ -59,67 +60,68 @@ body{
     width: 100%;
 }
 
+#head{
+    background-color: Yellow;
+}
+
+header{
+    width: 100%;
+
+}
 section{
     width: 100%;
-    height: 1080px;
-    overflow: hidden;
-    font-size: 16px;
+    height: 100vh;
 }
 
-#headline{
-    background: url('images/pastel.png') no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: stretch;
-}
-
-.black{
+#splash{
+    background: url("/images/pastel.png") no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
+}
+
+#splash .black{
     width:  50%;
+    height: 100%;
     background-color: black;
-    padding: auto;
 }
 
 .black .always{
     text-align: center;
-    background: url('images/pastel.png') no-repeat;
+    background: url("/images/pastel.png") no-repeat;
     background-size: cover;
     background-clip:text;
     -webkit-background-clip: text;
     color: transparent;
-    text-align: center;
+    text-align: right;
     margin-top: 0px;
-    vertical-align: middle;
 }
 
 .always h1{
+    margin: auto;
     font-family: 'Montserrat Alternates', sans-serif;
     font-weight: bolder;
-    overflow-wrap: break-word;
-    word-break: break-all;
-    font-size: calc(11vw + 11vh);
+    font-size: calc(60px + 15vw);
 }
 
-.white{
+#splash .white{
     display: flex;
     background: 
-    linear-gradient(to bottom, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('images/pastel.png') no-repeat;
+    linear-gradient(to bottom, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("/images/pastel.png") no-repeat;
     background-size: cover;
     flex-direction: column;
     width: 50%;
+    height: 100%;
     justify-content: space-around;
     color: white;
 }
 
 .white p{
-    flex-grow: 1;
-    flex-shrink: 1;
     margin-left: 20px;
     font-family: 'Montserrat Alternates', sans-serif;
     justify-items: space;
-    font-size: calc(6vw + 6vh);
+    font-size: calc(40px + 7vw);
 }
 
 
@@ -137,7 +139,9 @@ section{
 }
 
 .pro-picture img{
-    height: 100%;
+    height: calc(150px + 30vw);
+    width: calc(150px + 30vw);
+    border-radius: 50%;
 }
 
 .pro-bio{
@@ -147,17 +151,18 @@ section{
     flex-direction: column;
 }
 
-.greet{
-    font-family: 'Montserrat Alternates', sans-serif;
-    font-size: calc(4vh + 4vw);
+.pro-bio .greet{
+    font-size: calc(30px + 6vw);
     font-weight: bolder;
     }
 
 .pro-bio h1{
         text-align: center;
-        font-size: calc(2.5vh + 2.5vw);
+        font-size: calc(20px + 3vw);
+        font-weight: bold;
+        font-weight: bolder;
         font-family: 'Montserrat Alternates', sans-serif;
-        background: url('images/pastel.png') no-repeat;
+        background: url("/images/pastel.png") no-repeat;
         background-size: cover;
         background-clip:text;
         -webkit-background-clip: text;
@@ -166,11 +171,11 @@ section{
 
 .pro-bio p{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: calc(1vh + 1vw);
+    font-size: calc(16px + .5vw);
     padding: 20px;
     color: white;
-    text-indent: 40px;
-    line-height: calc(2vh + 2vw);
+    text-indent: 1em;
+    line-height: 2em;
 }
 
 .FSD{color:#FBF5BB;} .Devlang{color:#E399D9;} .per1{color:#CC97F9;} .per2{color:#9A9EF9;} .per3{color:#A4DeFe;}
@@ -182,7 +187,7 @@ section{
     height: 80px;
     color: black;
     vertical-align: middle;
-    font-size: calc(2vh + 2vw);
+    font-size: 3em;
     font-weight: bolder;
     line-height: 80px;
     border-radius: 20px;
@@ -208,76 +213,75 @@ section{
 }
 
 #My-Portfolio .portfolio-title{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    display:flex;
     align-items: center;
+    justify-content: center;
     font-family: 'Montserrat Alternates', sans-serif;
     font-weight: bolder;
     width: 50%;
-    background-color: rgb(4, 15, 36);
+    background-color: rgb(7, 25, 58);
     color: white;
+    font-size: calc(60px + 8vw);
     text-align: right;
-    overflow: hidden;
-}
-
-.goto-page{
-    font-size: calc(1.5vh + 1.5vw);
+    line-height: 200%;
 }
 
 .portfolio-title h1{
-    font-size: calc(7.5vh + 7.5vw);
-    margin: 0px;
-    background: url('images/pastel.png') no-repeat;
+    background: url("/images/pastel.png") no-repeat;
     background-size: cover;
     background-clip:text;
     -webkit-background-clip: text;
     color: transparent;
-    overflow-wrap: break-word;
     word-break: break-all;
+    margin-right: 30px;
 }
 
 #My-Portfolio .projects{
-    display: flex;
-    flex-direction: column;
+    height: 100vh;
+    padding: 15px 15px 15px 15px;
+    display: grid;
+    grid-template-columns: minmax(0, 50vw) minmax(0, 50vw);
+    grid-template-rows: repeat(3, minmax(0, 33.3vh));
+    grid-gap: 15px;
+    overflow: auto;
     width: 50%;
-    background-color: rgb(141, 180, 252);
+    background-color: rgb(181, 206, 252);
 }
 
 .project{
-    font-size: calc(2vh + 2vw);
+    font-size: 2em;
     color: white;
     vertical-align: middle;
     text-align: center;
-    margin: 5px
-}
-
-
-.first-row, .second-row, .third-row{
-    display: flex;
-    justify-content: space-evenly;
-    width: 100%;
-    height: 33.3%;
-}
-.box1, .box2, .box3, .box4, .box5, .box6 { 
-    border: 10px solid rgb(141, 180, 252);
-    align-items: center; 
-    justify-content: center;
-    width: 50%;
+    line-height: 350px;
 }
 
 .box1{
-    background-image: url('images/hp-quiz-title.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    display: block;
-}
-.box1 img{
-    opacity: 0;
-    border-radius: 50%;
+    background-image:url("images/6-deg-title.png");
+    background-size: 100% 100%;
+    -webkit-transition: .2s all;}
+
+.box2{
+    background-image:url("images/hp-quiz-title.png");
+    background-size: 100% 100%;
+     -webkit-transition: .2s all;}
+
+.learnmore1, .learnmore2{
+    width: 100%;
     height: 100%;
+    font-size: 1em;
+    opacity: 0;
+    cursor: pointer;
 }
+
+.learnmore1:hover, .learnmore2:hover{
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    background-color: rgba(0,0,0, 0.9);
+    font-size: 1em;
+    cursor: pointer;
+    }
 
 .box2{background-color:blue;}
 .box3{background-color:black;}
@@ -285,42 +289,41 @@ section{
 .box5{background-color:pink;}
 .box6{background-color:navy}
 
- #About-ME{
+#Contact-ME{
     display: flex;
     flex-direction: row;
-    background-color:rgb(65, 16, 16);
+    background-color: lightcoral;
 }
 
- #About-ME .contact-deets{
+#Contact-ME .contact-deets{
     width: 50%;
 }
 
- #About-ME .contact-title{
-    display:flex;
-    justify-content: center;
+#Contact-ME .contact-title{
+    display: flex;
     align-items: center;
+    justify-content: center;
     width: 50%;
     font-family: 'Montserrat Alternates', sans-serif;
     font-weight: bolder;
-    background-color: rgb(12, 4, 4);
+    background-color: rgb(44, 5, 5);
     color: white;
-    font-size: calc(6vw + 6vh);
-    text-align: center;
-
+    font-size: calc(50px + 9vw);
+    text-align: left;
+    line-height: 150%;
 }
 
 .contact-title h1{
-    background: url('images/pastel.png') no-repeat;
+    background: url("/images/pastel.png") no-repeat;
     background-size: cover;
     background-clip:text;
     -webkit-background-clip: text;
     color: transparent;
-    overflow-wrap: break-word;
     word-break: break-all;
 }
 
 .about-pic{
-    margin-top: 60px;
+    margin-top: 7vh;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -333,18 +336,19 @@ section{
 
 .about-me{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: calc(1vw + 1vh);
+    font-size: 2em;
+    text-align: center;
     padding: 20px;
     color: white;
-    text-indent: 40px;
-    line-height: 40px;
-    background-color: rgb(65, 16, 16)
+    text-indent: 2em;
+    line-height: 2em;
+    background-color: lightcoral;
 }
 
 .aboutcontact{
     display: flex;
     justify-content: center;
-    background-color: rgb(65, 16, 16)
+    background-color: lightcoral;
 }
 
 .git, .slack, .linkedin, .gmail{
@@ -354,10 +358,25 @@ section{
 .aboutcontact img{
     height: 100px;
     width: 100px;
+
+}
+
+#scroll{
+    font-size: 10px;
+    position:fixed;
+    z-index: 9;
+    bottom: 0px;
+    left: 50%;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+#scroll-icon{
+    opacity: 0.25;
+    height:10px;
 }
 
 .footer{
-    font-size: 11px;
    display: flex;
     bottom: 0px;
     left: 0px;
@@ -366,12 +385,14 @@ section{
     z-index: 1;
 }
 
-.footer a{
-    color: white;
-}
 
-/* ipad pro size */
+/* ipad size */
+
+
 @media screen and (max-width: 1024px){
+    body{
+        overflow-x: hidden;
+    }
 
     header{
         width: 100%;
@@ -379,7 +400,6 @@ section{
 
     section{
         width: 100%;
-        overflow: hidden;
     }
 
     .nav-links{
@@ -420,146 +440,238 @@ section{
         transform: rotate(45deg) translate(-5px,-6px);
     }
 
-    #headline{
+    #splash{
+        display: flex;
         flex-direction: column;
+        height: 100vh;
     }
-
-    .black, .white {
-        width: 100%;
-        height: 50%;
+    
+    #splash .black{
+        width:  100%;
+        height: 60%;
+    }
+    .always h1{
+        margin-top: 55px;
         text-align: center;
     }
 
-    .black .always{
+    #splash .white{
+        height: 40%;
+        width: 100%;
+        justify-content: space-around;
+        color: white;
+    }
+    
+    .white p{
+        margin: 0px;
+        padding: 20px;
         text-align: center;
     }
 
-    #Professional-Bio{
+   #Professional-Bio{
         flex-direction: column;
-        height:1200px;
-    }
-
-    .pro-picture, .pro-bio{
-        width: 100%;
+        height: 1200px;
+        background-color: black;
+        width: 100vw;
+        align-items: center;
+        justify-content: flex-start;
+        padding:0px;
+        margin: 0px;
     }
 
     .pro-picture{
-        height: 40%;
-    }
-
-    .pro-picture img{
-        height: 75%;
-        border-radius: 50%;
+        display: flex;
+        height: 45vh;
+        justify-content: center;
+        align-items: center;
     }
 
     .pro-bio{
-        height: 60%;
+        height: 50vh;  
+        background-color: black;
+        width: 100%;
+    }
+
+    .pro-bio p{
+        font-family: Arial, Helvetica, sans-serif;
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+        color: white;
+        text-indent: 2em;
     }
 
     #My-Portfolio{
+        display: flex;
         flex-direction: column;
     }
-    
+
+
     #My-Portfolio .portfolio-title{
         width: 100%;
-        height: 30%;
+        background-color: rgb(7, 25, 58);
+        color: white;
+        text-align: center;
+    }
+
+
+    #My-Portfolio .projects{
+        width: 100%;
+    }
+    
+    .project{
+        font-size: 2em;
+        color: white;
+        vertical-align: middle;
+        text-align: center;
+        line-height: 250px;
+    }
+    
+    #Contact-ME{
+        flex-direction: column;
+    }
+    #Contact-ME :nth-child(1) { order: 2; }
+    #Contact-ME :nth-child(2) { order: 1; }
+    
+    #Contact-ME .contact-deets{
+        width: 100%;
+        height: 700px;
+    }
+    
+    #Contact-ME .contact-title{
+        height: 40vh;
+        width: 100%;
         text-align: center;
     }
     
-    
-    #My-Portfolio .projects{
-        height: 70%;
-        width: 100%;
-    }
-
-    .box1 img{
-        width: 100%;
-    }
-
-    #About-ME{
-        flex-direction: column;
-        height: 1300px
+    .about-pic{
+        margin-top: 20px;
     }
     
-     #About-ME :nth-child(1) { order: 2; }
-     #About-ME :nth-child(2) { order: 1; }
+    .about-pic img{
+        height: 300px;
+        width: 300px;
+        border-radius: 50%;
+    }
     
-     #About-ME .contact-deets {
-     width: 100%;
-     height: 60%;
- }
- #About-ME .contact-title{
-    width: 100%;
-    height: 40%;
-}
+    .about-me{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.3em;
+        padding: 20px;
+        color: white;
+        text-indent: 2em;
+        line-height: 1.5em;
+    }
+    
+    .aboutcontact img{
+        height: 100px;
+        width: 100px;
+    }
 
-.about-pic img{
-    margin-top: 10px;
-    height: 200px;
-    width: 200px;
-    border-radius: 50%;
-}
-
-.git, .slack, .linkedin, .gmail{
-    margin: 10px;
-}
-
-.aboutcontact img{
-    height: 50px;
-    width: 50px;
-}
 
 }
 
-/* ipad pro size */
+/*for lower screen */
+
 @media screen and (max-width: 768px){
-
-    #Professional-Bio{
-        flex-direction: column;
-        height:100vh;
+    #splash .black{
+    height: 50%;
+    }
+    #splash .white{
+        height: 50%;
     }
 
-    .pro-picture, .pro-bio{
-        width: 100%;
+
+    .always h1{
+        margin-top: 35px;
+        text-align: center;
+    }
+
+   #Professional-Bio{
+        flex-direction: column;
+        height: 1024px;
+        width: 100vw;
+        align-items: center;
+        justify-content: flex-start;
+        padding:0px;
+        margin: 0px;
     }
 
     .pro-picture{
-        height: 40%;
+        margin-top: 20px;
+        display: flex;
+        height: 300px;
+        width: 300px;
+        justify-content: center;
+        align-items: center;
     }
 
-    .pro-picture img{
-        height: 80%;
-        border-radius: 50%;
+    .pro-bio{
+        height: 50vh;  
+        width: 100%;
     }
 
-    #About-ME{
-        flex-direction: column;
-        height: 1300px
+}
+
+@media screen and (max-width: 500px){
+
+   #Professional-Bio{
+        height: 1000px;
     }
 
-     #About-ME .contact-deets {
-        height: 70%;
-    }
+    .mail-me{
+    font-size: 30px;
+}
 
-    #About-ME .contact-title{
-        height: 30%;
-    }
+#My-Portfolio{
+    display: flex;
+    flex-direction: column;
+}
 
-.about-pic img{
-    margin-top: 10px;
-    height: 200px;
-    width: 200px;
-    border-radius: 50%;
+#My-Portfolio .portfolio-title{
+    width: 100%;
+    background-color: rgb(7, 25, 58);
+    color: white;
+    text-align: center;
+}
+
+
+#My-Portfolio .projects{
+    width: 100%;
+}
+
+.project{
+    font-size: 1em;
+    color: white;
+    vertical-align: middle;
+    text-align: center;
+}
+
+#My-Portfolio .projects{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    justify-content: center;
+
 }
 
 .git, .slack, .linkedin, .gmail{
     margin: 10px;
 }
 
-.aboutcontact img{
-    height: 50px;
-    width: 50px;
+
+
 }
+
+@media screen and (max-width: 400px){
+    .aboutcontact{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+}
+
 
 
 }

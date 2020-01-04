@@ -8,16 +8,16 @@
         <meta name="author" content="Mulia Teguh Nguyen">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates:400,500,600,800&display=swap" rel="stylesheet">
-        <!--<link rel="stylesheet" href="normalize.css" type="text/css">!-->
         <link rel="stylesheet" href="main.css" type="text/css">
     </head>
     <body>
         <nav>
             <ul class="nav-links">
-                <li><a href="#headline">Home</a></li>
+                <li><a href="#splash">Home</a></li>
                 <li><a href="#Professional-Bio">Mulia Teguh Nguyen</a></li>
                 <li><a href="#My-Portfolio">Portfolio</a></li>
-                <li><a href="#About-ME">About Me</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="#Contact-ME">Contact Me</a></li>
             </ul>
             <div class="burger">
                 <div class="line1"></div>
@@ -27,14 +27,14 @@
         </nav>
 
         <main>
-            <section id="headline">
+            <section id="splash">
                 <div class="black">
-                    <div class="always"><h1>ALWAYS</h1></div>
+                    <div class="always"><h1>ALW<br/>AYS.</h1></div>
                 </div>
                 <div class="white">
-                    <div class="create"><p>creating.</p></div>
-                    <div class="grow"><p>growing.</p></div>
-                    <div class="learn"><p>learning.</p></div>
+                    <div class="create"><p>creating</p></div>
+                    <div class="grow"><p>growing</p></div>
+                    <div class="learn"><p>learning</p></div>
                 </div>
             </section>
             <section id="Professional-Bio">
@@ -45,54 +45,36 @@
                     <h1><span class="greet">G'day!</span><br/>
                         I'm Mulia Teguh Nguyen!</h1>
                     <p>A <span class="FSD">full stack developer</span> student at Thinkful
-                        and a university lecturer. The constant need to grow, 
+                        and a University Lecturer. The constant need to grow, 
                         learn and adapt is something that I try to instil in my students. 
-                    Current developing skills include <span class="Devlang">HTML, CSS, JavaScript & jQuery.</span> I
+                    Current developing skills include <span class="Devlang">HTML, CSS, JavaScrip & jQuery.</span> I
                 am looking forward to learning more!</p>
                         <p>I am <span class="per1">curious</span>, <span class="per2">easy to approach</span>, 
                             and as a teacher, <span class="per3">patient</span>. I am looking forward to the challenges developing brings.</p>
-                            <button type="button" class="mail-me">contact me</button>
+                            <div type="button" class="mail-me">contact me</div>
                 </div>
             </section>
             <section id="My-Portfolio">
                 <div class="portfolio-title">
                     <h1>Portfolio</h1>
-                    <p class="goto-page">Click on an image to find out more.</p>
                 </div>
                 <div class="projects">
-                    <div class="first-row">
-                        <div class="project box1"><a href="project1.html"><img src="images/hp-quiz-title.png" alt="harry potter quiz"></a></div>
-                        <div class="project box2">reserved</div>
-                    </div>
-                    <div class="second-row">
-                        <div class="project box3">reserved</div>
-                        <div class="project box4">reserved</div>
-                    </div>
-                    <div class="third-row">
-                        <div class="project box5">reserved</div>
-                        <div class="project box6">reserved</div>
-                    </div>
+                    <div class="project box1"><div class="learnmore1">Learn more</div></div>
+                    <div class="project box2"><div class="learnmore2">Learn more</div></div>
+                    <div class="project box3">Reserved</div>
+                    <div class="project box4">Reserved</div>
+                    <div class="project box5">Reserved</div>
+                    <div class="project box6">Reserved</div>
                 </div>
             </section>
-            <section id="About-ME">
+            <section id="Contact-ME">
                 <div class="contact-deets">
                     <div class="about-pic">
                         <img src="images/profileabout.jpg" alt="Happy Mulia Nguyen">
                     </div>
                     <div class="about-me">
                         <p>
-                            I have been fascinated with tech for the longest of times. It started
-                            off with playing games, to building computers, to creating websites with
-                            the 'what you see is what you get' website builders. I have always thought
-                            that my future was in tech, but alas, pressures of the family pushed me alway
-                            from that future. Hence, being a teacher. I love all my kids, however, if I am telling
-                            them to chase their dreams to be happy, then I have to follow that advice too.
-                        </p>
-                        <p>
-                            As everyone says, it's never too late to do what you love. And after 10 years 
-                            of moving up the teaching chain, here I am. Back to being a student and having 
-                            a blast learning. I am soaking all the information I can, while trying not 
-                            to bang my head against the wall too much. 
+                            Please feel free to contact me. 
                         </p>
                     </div>
                     <div class="aboutcontact">
@@ -101,14 +83,18 @@
                         <div class="gmail"><a href="mailto:mulia.teguh.nguyen@gmail.com"><img src="images/email.svg" alt="email"></a></div>
                     </div>
                 </div>
-                <div class="contact-title"><h1>About <br />Me</h1>
+                <div class="contact-title"><h1>Contact <br />Me</h1>
                 </div>
             </section>
+            <div id="scroll">
+                <p><img id="scroll-icon" src="/icons/scroll.svg" alt="scroll arrows"></p>
+            </div>
         </main>
         <footer>
             <div class="footer">Created by Mulia Teguh Nguyen, 2019. Contact: <address><a href="mailto:mulia.teguh.nguyen@gmail.com">mulia.teguh.nguyen@gmail.com</a></address></div>
         </footer>
-        <script type="text/javascript" src="index.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
         <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+        <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
     </body>
 </html>
